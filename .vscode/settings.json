@@ -1,0 +1,36 @@
+{
+
+    "liveSassCompile.settings.generateMap": true,
+
+    "liveSassCompile.settings.formats": [
+
+        {
+
+            "format": "expanded",
+
+            "extensionName": ".css",
+
+            "savePath": "/styles/css"
+
+        },
+
+        {
+
+            "format": "compressed",
+
+            "extensionName": ".min.css",
+
+            "savePath": "/styles/css"
+
+        }
+
+    ],
+
+    "liveSassCompile.settings.includeItems": [
+
+        "/styles/scss/ui.scss"
+
+    ],
+    "editor.formatOnSave": true
+
+}

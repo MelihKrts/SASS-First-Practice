@@ -1,0 +1,64 @@
+.contact-info {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35rem;
+    background: $color-white;
+    height: 100%;
+    text-align: center;
+    z-index: 1100;
+    padding: 0 2rem;
+    padding-top: 5rem;
+    display: none;
+    transition: all 0.4s ease-out;
+
+    &.active {
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+        display: block;
+        transition: all 0.4s ease-out;
+    }
+
+    #close-contact-info {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        cursor: pointer;
+        transition: all 0.4s ease-out;
+        font-size: 4rem;
+        color: $color-black;
+
+        &:hover {
+            transform: rotate(90deg);
+            transition: all 0.4s ease-out;
+        }
+    }
+
+    .info {
+        padding: 1.2rem 0;
+
+        i {
+            @include iconsBox();
+            margin-bottom: 0.5rem;
+        }
+
+        h3 {
+            @include titleText(2rem);
+            padding: 1rem 0;
+        }
+
+        p {
+            @include graphText(1.5rem);
+        }
+    }
+
+    .share {
+        padding-top: 2rem;
+        border-top: $border;
+        margin-top: 1rem;
+
+        a {
+            @include iconsBox();
+            margin: 0 0.3rem;
+        }
+    }
+}

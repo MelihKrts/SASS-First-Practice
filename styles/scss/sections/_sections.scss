@@ -1,0 +1,27 @@
+@import "header/header";
+@import "contactInfo/contactInfo";
+@import "home/home";
+@import "about/about";
+@import "services/services";
+@import "projects/projects";
+@import "reviews/reviews";
+@import "pricing/pricing";
+@import "contact/contact";
+@import "blog/blog";
+@import "footer/footer";
+
+section {
+    padding: 5rem 10%;
+}
+
+@media (max-width: 1200px) {
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 3rem 2rem;
+    }
+}
