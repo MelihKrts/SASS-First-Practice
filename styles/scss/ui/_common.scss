@@ -1,0 +1,57 @@
+.heading {
+    margin-bottom: 3rem;
+    @include titleText(3rem);
+    padding-left: 1rem;
+    border-left: 1rem solid $color-yellow;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: $color-black;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    border-radius: 0.5rem;
+
+    &:hover {
+        background: $color-yellow;
+        color: $color-black;
+    }
+}
+
+.logo-container {
+    text-align: center;
+
+    img {
+        height: 10rem;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        top: 50%;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .about .row .content h3 {
+        font-size: 2.5rem;
+    }
+}
